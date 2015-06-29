@@ -5,8 +5,7 @@ import static com.sandwich.util.Assert.fail;
 import com.sandwich.koan.Koan;
 
 public class AboutKoans {
-
-	@Koan
+	
 
 	
 	@Koan
