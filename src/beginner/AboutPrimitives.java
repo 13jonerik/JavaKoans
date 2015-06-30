@@ -15,26 +15,25 @@ public class AboutPrimitives {
 	@Koan
 	public void primitivesOfTypeIntHaveAnObjectTypeInteger() {
 		Object number = 1;
-		assertEquals(getType(number), __);
-
+		assertEquals(getType(number), Integer.class);
 		// Primitives can be automatically changed into their object type via a process called auto-boxing
 		// We will explore this in more detail in intermediate.AboutAutoboxing
 	}
 
 	@Koan
 	public void integersHaveAFairlyLargeRange() {
-		assertEquals(Integer.MIN_VALUE, __);
-		assertEquals(Integer.MAX_VALUE, __);
+		assertEquals(Integer.MIN_VALUE, -2147483648);
+		assertEquals(Integer.MAX_VALUE, 2147483647);
 	}
 
 	@Koan
 	public void integerSize() {
-		assertEquals(Integer.SIZE, __);  // This is the amount of bits used to store an int
+		assertEquals(Integer.SIZE, 32);  // This is the amount of bits used to store an int
 	}
 
 	@Koan
 	public void wholeNumbersCanAlsoBeOfTypeLong() {
-		assertEquals(getType(1L), __);
+		assertEquals(getType(1L), long.class);
 	}
 
 	@Koan
