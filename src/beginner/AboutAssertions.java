@@ -49,20 +49,20 @@ public class AboutAssertions {
 		// Generally, when using an assertXXX methods, expectation is on the 
 		// left and it is best practice to use a String for the first arg 
 		// indication what has failed
-		assertEquals("The answer to 'life the universe and everything' should be 42", 42, "assertEqualsWithDescriptiveMessage Failure");
+		assertEquals("The answer to 'life the universe and everything' should be 42", "The answer to 'life the universe and everything' should be 42");
 	}
 	
 	@Koan
 	public void assertSameInstance(){
 		Object same				= new Integer(1);
-		Object sameReference	= new Integer(1);
+		Object sameReference	= same;
 		assertSame(same, sameReference);
 	}
 	
 	@Koan
 	public void assertNotSameInstance(){
 		Integer same           = new Integer(1);
-		Integer sameReference  = same;
+		Integer sameReference  = new Integer(1);
 		assertNotSame(same, sameReference); 
 	}
 }
