@@ -16,32 +16,32 @@ public class AboutAssertions {
 
 	@Koan 
 	public void assertBooleanTrue() {
-		assertTrue(__); // should be true really
+		assertTrue(true); // should be true really
 	}
 
 	@Koan
 	public void assertBooleanFalse() {
-		assertFalse(__); 
+		assertFalse(false);
 	}
 	
 	@Koan
 	public void assertNullObject(){
-		assertNull(__);
+		assertNull(null);
 	}
 	
 	@Koan
 	public void assertNotNullObject(){
-		assertNotNull(null); // anything other than null should pass here...
+		assertNotNull(1); // anything other than null should pass here...
 	}
 
 	@Koan
 	public void assertEqualsUsingExpression(){
-		assertTrue("Hello World!".equals(__));
+		assertTrue("Hello World!".equals("Hello World!"));
 	}
 
 	@Koan
 	public void assertEqualsWithBetterFailureMessage(){
-		assertEquals(1, __);
+		assertEquals(1, 1);
 	}
 
 	@Koan
@@ -49,13 +49,13 @@ public class AboutAssertions {
 		// Generally, when using an assertXXX methods, expectation is on the 
 		// left and it is best practice to use a String for the first arg 
 		// indication what has failed
-		assertEquals("The answer to 'life the universe and everything' should be 42", 42, __);
+		assertEquals("The answer to 'life the universe and everything' should be 42", 42, "assertEqualsWithDescriptiveMessage Failure");
 	}
 	
 	@Koan
 	public void assertSameInstance(){
 		Object same				= new Integer(1);
-		Object sameReference	= __;
+		Object sameReference	= new Integer(1);
 		assertSame(same, sameReference);
 	}
 	
