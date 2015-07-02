@@ -148,7 +148,7 @@ public class AboutPrimitives {
 	@Koan
 	public void primitivesOfTypeDoubleHaveAnObjectTypeDouble() {
 		Object number = 1.0;
-		assertEquals(getType(number), __);
+		assertEquals(getType(number), _);
 	}
 
 	@Koan
