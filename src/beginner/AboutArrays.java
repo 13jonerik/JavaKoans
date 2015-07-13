@@ -65,12 +65,12 @@ public class AboutArrays {
 	public void arrayIndexOutOfBounds(){
 		int[] array = new int[]{1};
 		@SuppressWarnings("unused")
-		int meh = array[1]; // remember 0 based indexes, 1 is the 2nd element (which doesn't exist)
+		int meh = array[0]; // remember 0 based indexes, 1 is the 2nd element (which doesn't exist)
 	}
 	
 	@Koan
 	public void arrayLengthCanBeChecked(){
-		assertEquals(new int[1].length, 2);
+		assertEquals(new int[1].length, 1);
 	}
 	
 }
