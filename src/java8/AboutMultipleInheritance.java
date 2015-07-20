@@ -3,7 +3,6 @@ package java8;
 import com.sandwich.koan.Koan;
 
 import static com.sandwich.util.Assert.assertEquals;
-import static com.sandwich.koan.constant.KoanConstants.__;
 
 public class AboutMultipleInheritance {
     
@@ -31,7 +30,7 @@ public class AboutMultipleInheritance {
     @Koan
     public void multipleInheritance(){
         Minotaur minotaur = new Minotaur();
-        assertEquals(minotaur.sound(), __);
+        assertEquals(minotaur.sound(), "moo");
     }
 
 }
